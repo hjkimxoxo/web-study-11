@@ -24,7 +24,7 @@ ALTER TABLE MEMBER MODIFY(name varchar2(20));
 
 -------------------------------------trigger--------------------------------------
 
-
+DELETE product;
 
 CREATE TABLE product(
 	code NUMBER(5) PRIMARY KEY,
@@ -33,6 +33,8 @@ CREATE TABLE product(
 	pictureurl varchar(50),
 	description varchar(1000)
 );
+
+DROP SEQUENCE product_seq;
 
 CREATE SEQUENCE PRODUCT_SEQ
 	START WITH 1

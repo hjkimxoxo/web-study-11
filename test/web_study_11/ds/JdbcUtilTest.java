@@ -13,7 +13,7 @@ public class JdbcUtilTest {
 	@Test
 	public void testGetConnection() {
 		System.out.println("TestGetConnection");
-		Connection con = JdbcUtil.getConnection();
+		Connection con = JndiDS.getConnection();
 		Assert.assertNotNull(con);
 		System.out.println(con);
 	}

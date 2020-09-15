@@ -14,7 +14,7 @@ SELECT PWD FROM MEMBER WHERE USERID='SOMI';
 SELECT name, userid, pwd, email, phone, admin, joindate FROM MEMBER
 WHERE userid = 'somi' AND pwd = '1234';
 
-SELECT * FROM product; 
+SELECT * FROM product ORDER BY code; 
 
 insert into product values(null, '개념을 콕콕 잡아주는 데이터베이스', 27000, 'db.jpg', '데이터베이스에 관한 모든 것을 쉽고 재미있게 정리한 교재...');
 insert into product values(null, '웹표준을 위한 HTML5', 25000, 'html5.jpg', 'HTML5 가이드북. 홈페이지 제작을 위한 필수 선택 HTML 기본 문법...');
@@ -23,4 +23,8 @@ insert into product values(null, 'Visual C++ MFC 윈도우 프로그래밍', 260
 insert into product values(null, 'jQuery and jQuery Mobile : 이해하기 쉽게 풀어쓴', 25000, 'jquery.jpg', '소스 하나로 데스크탑과 모바일까지 HTML5와 함께 사용한다. 초보자들도 ...');
 
 -- OR INSERT INTO product(NAME,PRICE,PICTUREURL,DESCRIPTION) VALUES 어쩌고 가능
+SELECT CODE,NAME,PRICE,PICTUREURL,DESCRIPTION FROM PRODUCT;
+DELETE FROM product WHERE code = 22;
+SELECT * FROM MEMBER;
+
 

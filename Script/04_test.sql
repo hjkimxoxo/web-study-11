@@ -36,3 +36,15 @@ END;
 SELECT * FROM TRI_TEST;
 INSERT INTO tri_test VALUES(NULL, 'test');
 INSERT INTO tri_test(txt) VALUES('test2');
+
+
+
+-----------------------------------------------------------------------------------
+SELECT * FROM PRODUCT;
+
+
+SELECT CODE,NAME,PRICE,PICTUREURL,DESCRIPTION FROM PRODUCT;
+
+SELECT CODE,NAME,PRICE,PICTUREURL,DESCRIPTION FROM PRODUCT WHERE code = 1;
+
+UPDATE product SET name=
