@@ -20,7 +20,7 @@ import web_study_11.service.ProductService;
 @WebServlet("/productUpdate.do")
 public class ProductUpdateHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-private ProductService service;
+	private ProductService service;
 	
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
